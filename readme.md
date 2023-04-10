@@ -1,3 +1,3 @@
  # Background color generator
 
- This application generate a hex-code for the bacground color
+ This application generate a hex-code for the background color
