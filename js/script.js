@@ -12,3 +12,10 @@ function colorChange() {
 	document.getElementById("main__hex-code").innerHTML = "#" + hex_code;
 	document.getElementsByTagName("body")[0].style.backgroundColor = "#" + hex_code;
 }
+
+function colorCopy() {
+	let hex_code = document.getElementById("main__hex-code").innerHTML;
+
+	let bgColor = "background-color: " + hex_code + ";";
+	navigator.clipboard.writeText(bgColor);
+}
