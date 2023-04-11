@@ -10,7 +10,7 @@ function colorChange() {
 		hex_code += hex_numbers[random_index];
 	}
 
-	document.getElementById("main__hex-code").innerHTML = "is " + hex_code;
+	document.getElementById("main__hex-code").innerHTML = hex_code;
 	document.getElementsByTagName("body")[0].style.background = hex_code;
 }
 

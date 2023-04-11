@@ -96,10 +96,13 @@ body {
 }
 
 .main__buttons {
+	flex: 0 1 auto;
 	display: flex;
 	justify-content: center;
 	gap: 30px;
 	flex-wrap: wrap;
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .main__button {
@@ -112,6 +115,17 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 	box-shadow: 3px 3px 10px 1px #000;
 	text-shadow: 1px 1px 1px #000;
+
+	transition: all 0.3s ease 0s;
+}
+
+.main__button:hover {
+	transform: scale(1.05);
+}
+
+.main__button:active {
+	background-color: #fff;
+	color: #555;
 }
 
 @keyframes colorchange {
@@ -143,12 +157,23 @@ body {
 @media (max-width: 479.98px) {
 	.main__title {
 		font-size: 35px;
-		text-transform: uppercase;
-		animation: colorchange 5s infinite alternate;
 	}
 
 	.main__subtitle {
 		font-size: 30px;
-		margin: 10% 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.main__buttons {
+		gap: 10px;
+	}
+
+	.main__title {
+		font-size: 30px;
+	}
+
+	.main__subtitle {
+		font-size: 25px;
 	}
 }
